@@ -1,0 +1,10 @@
+^F:\FLUTTER WITH MIHA INSTITUTE\APP_TEST_02\APP_02\WINDOWS\FLUTTER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SF:/Flutter with Miha Institute/app_test_02/app_02/windows" "-BF:/Flutter with Miha Institute/app_test_02/app_02/build/windows/x64" --check-stamp-file "F:/Flutter with Miha Institute/app_test_02/app_02/build/windows/x64/flutter/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
